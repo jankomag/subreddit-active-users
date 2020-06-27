@@ -25,10 +25,10 @@ current_hour = now.strftime("%H:%M")
 user_per_hour = {  # defining a dictionary to store the results in
 }
 
-while len(user_per_hour) < 10:
+while len(user_per_hour) < 24:
     now = datetime.now()
     current_hour = now.strftime("%H:%M")
-    time.sleep(60)
+    time.sleep(3600)
     currently_users = get_active_users(subreddit)
     user_per_hour.update( {current_hour : currently_users} )
     print(user_per_hour)
