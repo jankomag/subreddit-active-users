@@ -1,7 +1,6 @@
 #importing libraries
-import json
 import requests
-import sched, time
+import time
 from datetime import datetime
 import matplotlib.pyplot as plt 
 
