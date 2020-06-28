@@ -1,7 +1,7 @@
 #importing libraries
 import json
 import requests
-import sched, time
+import time
 from datetime import datetime
 import matplotlib.pyplot as plt 
 
@@ -37,4 +37,6 @@ print(user_per_hour)
 
 #plot the result
 plt.plot(*zip(*sorted(user_per_hour.items())))
+plt.tight_layout()  
+plt.savefig("graph.png")
 plt.show()
